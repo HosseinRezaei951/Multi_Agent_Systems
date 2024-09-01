@@ -1,0 +1,158 @@
+>> sensor 1 connected to sensor 2
+
+>> sensor 1 connected to sensor 4
+
+>> sensor 2 connected to sensor 1
+
+>> sensor 2 connected to sensor 3
+
+>> sensor 2 connected to sensor 5
+
+>> sensor 3 connected to sensor 2
+
+>> sensor 3 connected to sensor 6
+
+>> sensor 4 connected to sensor 1
+
+>> sensor 4 connected to sensor 5
+
+>> sensor 4 connected to sensor 7
+
+>> sensor 5 connected to sensor 2
+
+>> sensor 5 connected to sensor 4
+
+>> sensor 5 connected to sensor 6
+
+>> sensor 5 connected to sensor 8
+
+>> sensor 6 connected to sensor 3
+
+>> sensor 6 connected to sensor 5
+
+>> sensor 6 connected to sensor 9
+
+>> sensor 7 connected to sensor 4
+
+>> sensor 7 connected to sensor 8
+
+>> sensor 7 connected to sensor 10
+
+>> sensor 8 connected to sensor 5
+
+>> sensor 8 connected to sensor 7
+
+>> sensor 8 connected to sensor 9
+
+>> sensor 8 connected to sensor 11
+
+>> sensor 9 connected to sensor 6
+
+>> sensor 9 connected to sensor 8
+
+>> sensor 9 connected to sensor 12
+
+>> sensor 10 connected to sensor 7
+
+>> sensor 10 connected to sensor 11
+
+>> sensor 11 connected to sensor 8
+
+>> sensor 11 connected to sensor 10
+
+>> sensor 11 connected to sensor 12
+
+>> sensor 12 connected to sensor 9
+
+>> sensor 12 connected to sensor 11
+
+Communication Matrix:
+     S1  S2  S3  S4  S5  S6  S7  S8  S9  S10 S11 S12
+ S1  0   0   1   0   1   0   1   0   0   0   0   0
+ S2  0   0   0   1   0   1   0   1   0   0   0   0
+ S3  1   0   0   0   1   0   0   0   1   0   0   0
+ S4  0   1   0   0   0   1   0   1   0   1   0   0
+ S5  1   0   1   0   0   0   1   0   1   0   1   0
+ S6  0   1   0   1   0   0   0   1   0   0   0   1
+ S7  1   0   0   0   1   0   0   0   1   0   1   0
+ S8  0   1   0   1   0   1   0   0   0   1   0   1
+ S9  0   0   1   0   1   0   1   0   0   0   1   0
+ S10 0   0   0   1   0   0   0   1   0   0   0   1
+ S11 0   0   0   0   1   0   1   0   1   0   0   0
+ S12 0   0   0   0   0   1   0   1   0   1   0   0
+
+
+================== Start CSP Process ==================
+
+>> sensor 5 identified target 1
+
+>> sensor 8 identified target 1
+
+>> sensor 5 locked on target 1
+Sensor 5:
+        status: 1
+        radius: 1
+        position: (1, 1)
+        conncectedGroup: [3, 5, 7, 9]
+        visibleTargets: []
+        lockedTarget: 1
+
+
+>> sensor 8 locked on target 1
+Sensor 8:
+        status: 1
+        radius: 1
+        position: (2, 1)
+        conncectedGroup: [6, 8, 10, 12]
+        visibleTargets: []
+        lockedTarget: 1
+
+
+Visibility Matrix:
+     t1
+ S1  -1
+ S2  -1
+ S3  -1
+ S4  -1
+ S5  1
+ S6  -1
+ S7  -1
+ S8  1
+ S9  -1
+ S10 -1
+ S11 -1
+ S12 -1
+
+
+
+>> sensor 8 identified target 2
+
+>> sensor 11 identified target 2
+
+>> sensor 11 locked on target 2
+Sensor 11:
+        status: 1
+        radius: 1
+        position: (3, 1)
+        conncectedGroup: [9, 11, 13]
+        visibleTargets: []
+        lockedTarget: 2
+
+
+Visibility Matrix:
+     t1 t2
+ S1  -1 -1
+ S2  -1 -1
+ S3  -1 -1
+ S4  -1 -1
+ S5  1  -1
+ S6  -1 -1
+ S7  -1 -1
+ S8  1  0
+ S9  -1 -1
+ S10 -1 -1
+ S11 -1 1
+ S12 -1 -1
+
+
+================== End CSP Process ==================
